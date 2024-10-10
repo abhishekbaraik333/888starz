@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MegaPari</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        clifford: '#da373d',
+                    }
+                }
+            }
+        }
+    </script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Unbounded:wght@200..900&display=swap"
+        rel="stylesheet">
+</head>
+
+<body class="bg-black">
+    <header class="fixed top-0 w-full z-[100]">
+
+        <div class="py-6 flex items-center justify-between px-[4%]">
+            <a href="./index.html">
+                <h1 class="text-white text-3xl heading">888Starz</h1>
+            </a>
+            <!-- desktop navbar -->
+            <nav class="desktop-menu text-white hidden lg:flex gap-5 items-center">
+                <a class="hover:scale-[1.05] duration-200 ease text-sm font-medium" href="#about">About
+                    Us </a>
+                <a class="hover:scale-[1.05] duration-200 ease text-sm font-medium mr-5"
+                    href="#requirements">Requirements</a>
+                <a class="hover:scale-[1.05] duration-200 ease text-sm font-medium" href="#steps">Steps</a>
+                <a class="hover:scale-[1.05] duration-200 ease text-sm font-medium mr-5" href="#how-it-works">How it Works</a>
+                <a class="hover:scale-[1.05] duration-200 ease text-sm font-medium mr-5"
+                    href="#advantages">Advantages</a>
+                <a class="hover:scale-[1.05] duration-200 ease text-sm font-medium mr-5" href="#contact">Contacts</a>
+                <a href="">
+                    <button class="agent-btn">
+                        Become An Agent
+                    </button>
+                </a>
+            </nav>
+
+            <button id="hamburger" class="lg:hidden flex flex-col gap-1.5 relative z-[100]">
+                <span class="w-6 h-0.5 bg-white active transition-all duration-300"></span>
+                <span class="w-6 h-0.5 bg-white transition-all duration-300"></span>
+                <span class="w-6 h-0.5 bg-white transition-all duration-300"></span>
+            </button>
+
+            <!-- mobile navbar -->
+            <nav id="mobile-nav"
+                class="fixed z-[99] p-4  inset-x-0 top-20 h-1/2 bg-[#101010] transform -translate-x-full transition-transform duration-300 lg:hidden flex flex-col gap-5 justify-start items-center text-2xl text-white lg:text-lg">
+                <a class="hover:scale-[1.1] duration-200 ease text-xl font-semibold  "
+                    href="#about">About us</a>
+                <a class="hover:scale-[1.1] duration-200 ease text-xl  font-semibold "
+                    href="#requirements">Requirements</a>
+                <a class="hover:scale-[1.1] duration-200 ease text-xl font-semibold  "
+                    href="#steps">Steps</a>
+                <a class="hover:scale-[1.1] duration-200 ease text-xl font-semibold  " href="#how-it-works">How it Works</a>
+                <a class="hover:scale-[1.1] duration-200 ease text-xl font-semibold  "
+                    href="#advantages">Advantages</a>
+                <a class="hover:scale-[1.1] duration-200 ease text-xl font-semibold  " href="#contact">Contacts</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero px-[5%] h-[100vh]">
+            <div class="background-light"></div>
+            <div class="flex h-full">
+                <div class="hero-content text-white h-full flex flex-col justify-end py-10 gap-10">
+                    <h1 class="font-semibold heading text-4xl lg:text-7xl">
+                        Your path to <br>
+                        <span class="text-blue-gradient leading-[3rem] lg:leading-[5rem]">Success:</span>
+                        become <br> a MegaPari <span class="text-red-gradient">Agent!</span>
+                    </h1>
+                    <p class="text-xl font-medium">
+                        Earn and enjoy the benefits of partnering with MegaPari. <br>
+                        Reliability, stable income, and support await you. Join now
+                        <br class="hidden lg:block"> and start your journey to success!
+                    </p>
+                    <a href="">
+                        <button class="agent-btn text-2xl">
+                            Become An Agent
+                        </button>
+                    </a>
+                </div>
+
+                <div class="img-container hidden lg:block h-full z-[-2] absolute lg:w-1/3">
+                    <div class="header-elem hidden lg:block"></div>
+                    <!-- <img src="./images/hero-img.png" 
+                         class="img-responsive hidden lg:block absolute -top-20 z-[-1]" 
+                         alt="Hero Image"> -->
+                </div>
+            </div>
+        </section>
+
+        <section id="about" class="about mt-32 px-[5%]">
+            <div class="background-light-about"></div>
+            <div class="flex items-center">
+                <div class="lg:w-1/2 hidden lg:block">
+                    <img src="./images/aboutbg.png" alt="About Background">
+                </div>
+                <div class="lg:w-1/2 w-full">
+                    <h2 class="text-3xl text-white font-semibold">About us</h2>
+                    <p class="text-xl font-medium text-white mt-5">
+                        Our online gaming brand delivers first-class entertainment for a wide-ranging audience of
+                        players.
+                        Many years of successful work have helped us to gain valuable experience and invaluable
+                        knowledge,
+                        offering over 25,000 events for players to bet on, 16,000 of which are live, players can rest
+                        assured
+                        that they are playing at a very safe and secure gaming platform. 8 years of experience in
+                        building
+                        networks of cash agents in over 30 countries provides you with an easy and safe start for your
+                        business.
+                    </p>
+                    <div class="grid grid-cols-2 grid-rows-2 relative mt-10 gap-10">
+                        <div class="flex flex-col gap-2 justify-center text-center">
+                            <h4 class="text-blue-gradient text-3xl lg:text-6xl font-bold">25000+</h4>
+                            <h5 class="text-white text-xl">EVENTS</h5>
+                        </div>
+                        <div class="flex flex-col gap-2 justify-center text-center">
+                            <h4 class="text-blue-gradient text-3xl lg:text-6xl font-bold">16000+</h4>
+                            <h5 class="text-white text-xl">LIVE EVENTS</h5>
+                        </div>
+                        <div class="flex flex-col gap-2 justify-center text-center">
+                            <h4 class="text-blue-gradient text-3xl lg:text-6xl font-bold">8+</h4>
+                            <h5 class="text-white text-xl">YEARS OF WORK</h5>
+                        </div>
+                        <div class="flex flex-col gap-2 justify-center text-center">
+                            <h4 class="text-blue-gradient text-3xl lg:text-6xl font-bold">30+</h4>
+                            <h5 class="text-white text-xl">COUNTRIES OF INTERACTION</h5>
+                        </div>
+                        <div class="elem1"></div>
+                        <div class="elem0"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="requirements" class="requirements relative px-[5%] mt-32">
+            <div class="background-light-requirements"></div>
+
+            <div>
+
+                <div class="flex flex-col lg:flex-row gap-5 lg:gap-20 justify-between">
+                    <div class="lg:w-1/2">
+                        <h2 class="text-3xl text-white font-semibold">Agent Requirements</h2>
+                        <p class="text-xl font-medium text-white mt-5">The basic rules that must be agreed with the
+                            agent upon registration in order to avoid misunderstanding and reduce fraud risks:</p>
+                    </div>
+                    <div class="flex lg:w-1/2 relative justify-end">
+                        <div class="lg:block hidden">
+                            <img src="./images/1.png" class="numbers one" alt="first requirement">
+
+                        </div>
+                        <div class="card">
+                            <div class="lg:hidden block">
+                                <img src="./images/1.png" class="numbers-mobile " alt="first requirement">
+    
+                            </div>
+                            <p class="text-sm lg:text-xl font-medium text-white">The agent must be at least 18 years old</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="flex flex-col lg:flex-row gap-5 mt-5 lg:mt-0 lg:gap-20 justify-between">
+                    
+                    <div class="flex lg:w-1/2 relative justify-end">
+                        <div class="lg:block hidden ">
+                            <img src="./images/2.png" class="numbers two" alt="second-requirement">
+
+                        </div>
+                        <div class="card">
+                            <div class="lg:hidden block w-[15%]">
+                                <img src="./images/2.png" class="numbers-mobile" alt="second requirement">
+    
+                            </div>
+                            <p class="text-sm lg:text-xl font-medium text-white lg:w-full w-[85%]">The agent must provide the company with a photo of his ID, passport or driver's license in order to verify his identity</p>
+                        </div>
+                    </div>
+
+                    <div class="flex lg:w-1/2 relative justify-end mt-0 lg:mt-20">
+                        <div class="lg:block hidden ">
+                            <img src="./images/3.png" class="numbers three" alt="third requirement">
+
+                        </div>
+                        <div class="card ">
+                            <div class="lg:hidden block w-[15%]">
+                                <img src="./images/3.png" class="numbers-mobile" alt="third requirement">
+    
+                            </div>
+                            <p class="text-sm lg:text-xl font-medium text-white lg:w-full w-[85%]">The main task of the agent is to faithfully replenish players' accounts and withdraw players' funds, which allows the agent to earn commissions from replenishment and withdrawal</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="flex flex-col lg:flex-row gap-5 mt-5 lg:mt-0 lg:gap-20 justify-between">
+                    
+                    <div class="flex lg:w-1/2 relative justify-end">
+                        <div class="lg:block hidden ">
+                            <img src="./images/4.png" class="numbers four" alt="forth-requirement">
+
+                        </div>
+                        <div class="card">
+                            <div class="lg:hidden block w-[15%]">
+                                <img src="./images/4.png" class="numbers-mobile" alt="forth requirement">
+    
+                            </div>
+                            <p class="text-sm lg:text-xl font-medium text-white lg:w-full w-[85%]">The agent must have a team to ensure transactions are processed 24/7</p>
+                        </div>
+                    </div>
+
+                    <div class="flex lg:w-1/2 relative justify-end mt-0 lg:mt-20">
+                        <div class="lg:block hidden ">
+                            <img src="./images/5.png" class="numbers" alt="fifth requirement">
+
+                        </div>
+                        <div class="card ">
+                            <div class="lg:hidden block w-[15%]">
+                                <img src="./images/5.png" class="numbers-mobile" alt="fifth requirement">
+    
+                            </div>
+                            <p class="text-sm lg:text-xl font-medium text-white lg:w-full w-[85%]">The agent must have the necessary equipment to process transactions conveniently and quickly</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="flex flex-col lg:flex-row gap-5 mt-5 lg:mt-0 lg:gap-20 justify-between">
+                    
+                    <div class="flex lg:w-1/2 relative justify-end">
+                        <div class="lg:block hidden ">
+                            <img src="./images/6.png" class="numbers four" alt="sixth-requirement">
+
+                        </div>
+                        <div class="card">
+                            <div class="lg:hidden block w-[15%]">
+                                <img src="./images/6.png" class="numbers-mobile" alt="sixth requirement">
+    
+                            </div>
+                            <p class="text-sm lg:text-xl font-medium text-white lg:w-full w-[85%]">The agent undertakes not to engage in activities that are contrary to the company's rules. If the agent becomes aware that the player is intentionally violating the company rules, the agent undertakes to report the violations to the company managers</p>
+                        </div>
+                    </div>
+
+                    <div class="flex lg:w-1/2 relative justify-end lg:justify-center mt-0 lg:mt-20">
+                       <img src="./images/requirements_img.png" alt="three circles" class="w-[200px] lg:w-[300px]">
+                    </div>
+                </div>
+
+            </div>
+            
+        </section>
+    </main>
+
+
+    <script src="script.js"></script>
+</body>
+
+</html>
