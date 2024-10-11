@@ -245,6 +245,34 @@ header {
   height: 120px;
 }
 
+@media screen and (max-width: 450px) {
+  .card::after,
+  .card::before {
+    scale: 0.6;
+  }
+  .card::after {
+    top: -30%;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .card::before {
+    left: -50%;
+  }
+  .card::after {
+    right: -50%;
+  }
+}
+
+@media screen and (max-width: 991px) {
+  .card::before {
+    left: -40%;
+  }
+  .card::after {
+    right: -40%;
+  }
+}
+
 /* STEPS */
 
 .steps__list {
@@ -615,12 +643,13 @@ svg {
   justify-content: center;
   align-items: center;
   height: 100%;
+  position: relative;
 }
 
 .stage__number img {
-  height: fit-content;
-  max-height: 100%;
+  position: absolute;
   z-index: 4;
+  height: 200px;
 }
 
 .transaction__stages .stage__item .description {
@@ -692,7 +721,7 @@ svg {
     grid-template-columns: 60px 1fr;
     height: auto;
     min-height: 100px;
-}
+  }
   .transaction__stages .stage__item::before {
     left: -80%;
     top: 60%;
@@ -700,10 +729,10 @@ svg {
   .transaction__stages .stage__item::after {
     right: -100%;
     top: -150%;
-}
-.transaction__stages .stage__item .description {
-  font-size: 14px;
-}
+  }
+  .transaction__stages .stage__item .description {
+    font-size: 14px;
+  }
 }
 
 @media screen and (max-width: 991px) {
@@ -715,13 +744,17 @@ svg {
   }
   .transaction__stages .stage__item::after {
     right: -60%;
-}
-.transaction__stages .stage__item .description {
-  padding-inline-end: 0;
-}
-.description {
-  font-size: 16px;
-}
+  }
+  .transaction__stages .stage__item .description {
+    padding-inline-end: 0;
+  }
+  .description {
+    font-size: 16px;
+  }
+  .stage__number img {
+    height: 150px;
+    max-width: 200px;
+  }
 }
 
 @media screen and (max-width: 450px) {
@@ -734,19 +767,27 @@ svg {
   }
   .description {
     font-size: 14px;
-}
+  }
+  .stage__number {
+    width: 35%;
+  }
+
+  .stage__number img {
+    height: 130px;
+    max-width: 200px;
+  }
 }
 
 @media screen and (max-width: 1300px) {
   .stage__number {
-      padding-inline: 10px;
+    padding-inline: 10px;
   }
   .description {
     font-size: 18px;
-}
-.transaction__stages .stage__item {
-  width: auto;
-  grid-template-columns: 80px 1fr;
-  gap: 10px;
-}
+  }
+  .transaction__stages .stage__item {
+    width: auto;
+    grid-template-columns: 80px 1fr;
+    gap: 10px;
+  }
 }
