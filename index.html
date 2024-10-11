@@ -73,7 +73,9 @@
         </div>
     </header>
 
-    <main>
+    <main class=" max-w-[1500px] mx-auto">
+
+        <!-- Hero -->
         <section class="hero px-[5%] h-[100vh]">
             <div class="background-light"></div>
             <div class="flex h-full">
@@ -88,22 +90,23 @@
                         Reliability, stable income, and support await you. Join now
                         <br class="hidden lg:block"> and start your journey to success!
                     </p>
-                    <a href="">
+                    <a href="#contact" class="mt-12" >
                         <button class="agent-btn text-2xl">
                             Become An Agent
                         </button>
                     </a>
                 </div>
 
-                <div class="img-container hidden lg:block h-full z-[-2] absolute bottom-[10%] -right-[20%] lg:w-[70%]">
-                    <div class="header-elem hidden lg:block"></div>
+                <div class="img-container hidden md:block h-full z-[-2] absolute bottom-[10%] md:-right-[20%] lg:-right-[20%] md:w-[60%]  lg:w-[70%]">
+                    <div class="header-elem hidden md:block"></div>
                     <img src="./images/hero-img.png" 
-                         class=" hidden lg:block" 
+                         class=" hidden md:block" 
                          alt="Hero Image">
                 </div>
             </div>
         </section>
 
+        <!-- About -->
         <section id="about" class="about mt-10 lg:mt-[15rem] px-[5%]">
             <div class="background-light-about"></div>
             <div class="flex items-center">
@@ -148,9 +151,9 @@
             </div>
         </section>
 
+        <!-- Requirements -->
         <section id="requirements" class="requirements relative px-[5%] mt-32">
             <div class="background-light-requirements"></div>
-
             <div>
 
                 <div class="flex flex-col lg:flex-row gap-5 lg:gap-20 justify-between">
@@ -260,7 +263,143 @@
             </div>
             
         </section>
+
+
+        <!-- Steps -->
+        <section id="steps" class="steps relative px-[5%] mt-32">
+
+                <div class="flex flex-col lg:flex-row gap-5 lg:gap-20 justify-between">
+                    <div class="lg:w-1/2">
+                        <h2 class="text-3xl text-white font-semibold">Steps to become a Megapari agent</h2>
+                    </div>
+                </div>
+
+                <div class="steps__list" >
+                    <div class="steps__card" >
+                        <span class="card__number">1</span>
+                        <div class="card__head" >
+                            <img src="https://megapariagents.com/wp-content/themes/megapariagents_new2024/img/steps/id-card.svg" alt="id-card" class="card__icon">
+                            <p class="card__title">IDENTITY VERIFICATION</p>
+                        </div>
+                        <div class="card__body" >
+                            <p class="description">This is a necessary step to ensure effective collaboration with Megapari.</p>
+                        </div>
+                    </div>
+                    <div class="steps__card" >
+                        <span class="card__number">2</span>
+                        <div class="card__head" >
+                            <img src="https://megapariagents.com/wp-content/themes/megapariagents_new2024/img/steps/wallet.svg" alt="wallet" class="card__icon">
+                            <p class="card__title">WALLET INFORMATION SUBMISSION</p>
+                        </div>
+                        <div class="card__body" >
+                            <p class="description">To proceed, it is required to provide wallet details: names, numbers, and documents confirming that the accounts belong to the agent.</p>
+                        </div>
+                    </div>
+                    <div class="steps__card" >
+                        <span class="card__number">3</span>
+                        <div class="card__head" >
+                            <img src="https://megapariagents.com/wp-content/themes/megapariagents_new2024/img/steps/prepayment.svg" alt="prepayment" class="card__icon">
+                            <p class="card__title">PREPAYMENT</p>
+                        </div>
+                        <div class="card__body" >
+                            <p class="description">The amount of funds that the agent sends to start work. Prepayment is the agent's balance within which the agent works with deposits and withdrawals of players.</p>
+                        </div>
+                    </div>
+                    <div class="steps__card" >
+                        <span class="card__number">4</span>
+                        <div class="card__head" >
+                            <img src="https://megapariagents.com/wp-content/themes/megapariagents_new2024/img/steps/console.svg" alt="console" class="card__icon">
+                            <p class="card__title">OBTAINING ACCESS TO INTERNAL PROGRAMS</p>
+                        </div>
+                        <div class="card__body" >
+                            <p class="description">After successful integration of methods on the site, the agent will receive all access to work programs from managers.</p>
+                        </div>
+                    </div>
+                    <div class="steps__card" >
+                        <span class="card__number">5</span>
+                        <div class="card__head" >
+                            <img src="https://megapariagents.com/wp-content/themes/megapariagents_new2024/img/steps/transaction.svg" alt="transaction" class="card__icon">
+                            <p class="card__title">TRANSACTION PROCESSING</p>
+                        </div>
+                        <div class="card__body" >
+                            <p class="description">Each application for a deposit or withdrawal from a player appears in the back office, and the agent, in turn, approves or rejects them.</p>
+                        </div>
+                    </div>
+                    <div class="steps__card" >
+                        <span class="card__number">6</span>
+                        <div class="card__head" >
+                            <img src="https://megapariagents.com/wp-content/themes/megapariagents_new2024/img/steps/comission.svg" alt="comission" class="card__icon">
+                            <p class="card__title">% AGENT COMMISSION</p>
+                        </div>
+                        <div class="card__body" >
+                            <p class="description">For each processed transaction, the agent receives a commission. The final percentage and amount of your earnings will depend on geolocation and other parameters. You will find out the exact commission after filling out all the information about yourself and receiving the agent status of a Megapari partner.</p>
+                        </div>
+                    </div>
+                    <div class="steps__image" ><img src="https://megapariagents.com/wp-content/themes/megapariagents_new2024/img/steps/stepsbg.png" alt="stepsbg"></div>
+                </div>
+            
+        </section>
+
+        <!-- how it works -->
+        <section id="how-it-works" class="how-it-works relative px-[5%] mt-32">
+
+            <div class="flex flex-col lg:flex-row gap-5 lg:gap-20 justify-between">
+                <div class="lg:w-1/2">
+                    <h2 class="text-3xl text-white font-semibold">How it works</h2>
+                </div>
+            </div>
+
+            <div class="howitworks__inner" >
+                <div class="howitworks__transaction-type transaction-type--deposits relative" >
+                    <img src="https://megapariagents.com/wp-content/themes/megapariagents_new2024/img/howitworks/howitworks_left.png" alt="blue-circle" class="howitworks__bg-circle howitworks__circle--blue">
+                    <h3 class="transaction-type__title">Deposits:</h3>
+                    <div class="transaction__stages">
+                        <div class="stage__item">
+                            <div class="stage__number"><img src="https://megapariagents.com/wp-content/themes/megapariagents_new2024/img/howitworks/1.png" alt="1"></div>
+                            <p class="description">AGENT DETAILS APPEAR ON THE MEGAPARI WEBSITE</p>
+                        </div>
+                        <div class="stage__item">
+                            <div class="stage__number"><img src="https://megapariagents.com/wp-content/themes/megapariagents_new2024/img/howitworks/2.png" alt="2"></div>
+                            <p class="description">APPROVES THE APPLICATION IN THE BACK OFFICE</p>
+                        </div>
+                        <div class="stage__item">
+                            <div class="stage__number"><img src="https://megapariagents.com/wp-content/themes/megapariagents_new2024/img/howitworks/3.png" alt="3"></div>
+                            <p class="description">THE PLAYER RECEIVES A DEPOSIT TO HIS GAME BALANCE</p>
+                        </div>
+                        <div class="stage__item">
+                            <div class="stage__number"><img src="https://megapariagents.com/wp-content/themes/megapariagents_new2024/img/howitworks/4.png" alt="4"></div>
+                            <p class="description">THE AGENT RECEIVES A COMMISSION PERCENTAGE FOR THE DEPOSIT</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="howitworks__transaction-type transaction-type--withdrawals relative" >
+                    <img src="https://megapariagents.com/wp-content/themes/megapariagents_new2024/img/howitworks/howitworks_right.png" alt="red-circle" class="howitworks__bg-circle howitworks__circle--red">
+                    <h3 class="transaction-type__title">Withdrawals:</h3>
+                    <div class="transaction__stages" >
+                        <div class="stage__item" >
+                            <div class="stage__number" ><img src="https://megapariagents.com/wp-content/themes/megapariagents_new2024/img/howitworks/1.png" alt="1"></div>
+                            <p class="description">THE AGENT RECEIVES REQUESTS FOR WITHDRAWALS FROM PLAYERS</p>
+                        </div>
+                        <div class="stage__item" >
+                            <div class="stage__number" ><img src="https://megapariagents.com/wp-content/themes/megapariagents_new2024/img/howitworks/2.png" alt="2"></div>
+                            <p class="description">SENDS MONEY TO THE PLAYER USING THE DETAILS</p>
+                        </div>
+                        <div class="stage__item" >
+                            <div class="stage__number" ><img src="https://megapariagents.com/wp-content/themes/megapariagents_new2024/img/howitworks/3.png" alt="3"></div>
+                            <p class="description">APPROVES AN APPLICATION TO WITHDRAW A PLAYER TO THE BACK OFFICE</p>
+                        </div>
+                        <div class="stage__item" >
+                            <div class="stage__number" ><img src="https://megapariagents.com/wp-content/themes/megapariagents_new2024/img/howitworks/4.png" alt="4"></div>
+                            <p class="description">RECEIVES A COMMISSION PERCENTAGE FOR WITHDRAWAL OF FUNDS</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+    </section>
+
     </main>
+
 
 
     <script src="script.js"></script>
