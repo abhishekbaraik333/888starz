@@ -19,26 +19,7 @@
     overflow-x: hidden;
   }
 
-  .hero {
-    position: relative;
-    width: 100%;
-    overflow: hidden; /* Prevent overflow from large images */
-}
 
-.img-container {
-    position: relative;
-    width: 100%;
-    max-width: 1000px;
-    height: auto;
-    overflow: hidden;
-}
-
-.img-responsive {
-    width: 100%;
-    max-width: 1000px;
-    min-width: 800px;
-    right: -20%; /* Prevent overflow on smaller screens */
-}
 
 .about {
     position: relative;
@@ -101,7 +82,7 @@
     border-radius: 881px;
     background: var(--primary);
     filter: blur(350px);
-    z-index: -1;
+    z-index: 1;
   }
   .background-light-requirements{
     left: -590px;
@@ -141,10 +122,46 @@
     -webkit-text-fill-color: transparent;
   }
 
+  .hero {
+    position: relative;
+    width: 100%;
+}
+
+.img-container {
+    height: auto;
+    /* overflow: hidden; */
+}
+
+.img-container:after{
+    content: '';
+    background: linear-gradient(180deg, #000307 0%, rgba(0, 3, 7, 0.00) 100%);
+    position: absolute;
+    top: 150px;
+    right: 0%;
+    width: 1800px;
+    height: 361px;
+    flex-shrink: 0;
+    z-index: 0;
+    display: block;
+}
+
+/* .img-container:before{
+    content: '';
+    background: linear-gradient(180deg, #000307 0%, rgba(0, 3, 7, 0.00) 100%);
+    position: absolute;
+    top: 10%;
+    right: -100%;
+    width: 400%;
+    height: 102px;
+    flex-shrink: 0;
+    z-index: -3;
+}
+ */
+
 
 .header-elem{
     position: absolute;
-    top: -10px;
+    top: 60px;
     right: -300px;
     background-color: #000307;
     height: 102px;
@@ -152,30 +169,6 @@
     z-index: 10;
 }
 
-/* .img-container:after{
-    content: '';
-    background: linear-gradient(180deg, #000307 0%, rgba(0, 3, 7, 0.00) 100%);
-    position: absolute;
-    top: -0px;
-    right: -100%;
-    width: 1800px;
-    height: 361px;
-    flex-shrink: 0;
-    z-index: -2;
-    display: block;
-}
-
-.img-container:before{
-    content: '';
-    background: linear-gradient(180deg, #000307 0%, rgba(0, 3, 7, 0.00) 100%);
-    position: absolute;
-    top: 90px;
-    right: -100%;
-    width: 400%;
-    height: 102px;
-    flex-shrink: 0;
-    z-index: -3;
-} */
 
 .elem0, .elem1 {
     position: absolute;
