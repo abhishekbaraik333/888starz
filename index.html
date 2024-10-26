@@ -13,6 +13,7 @@
     <link rel="manifest" href="/site.webmanifest">
     <link rel="stylesheet" href="style.css">
     <script src="https://cdn.tailwindcss.com"></script>
+    <meta name="keywords" content="888starz, 888starz Agent, 888starz E-Wallet Agent, 888starz Digital Wallet, Online Payment Solutions, E-Wallet Agent Commission">
     <script>
         tailwind.config = {
             theme: {
@@ -52,7 +53,7 @@
                     href="#advantages">Advantages</a>
                 <a class="hover:scale-[1.05] duration-200 ease text-sm font-medium mr-5" href="#contact">Contacts</a>
                 <a href="#contact">
-                    <button class="agent-btn">
+                    <button class="agent-btn" aria-label="Go to Contact Form">
                         Become An Agent
                     </button>
                 </a>
@@ -488,7 +489,7 @@
         </section>
 
         <!-- Contact -->
-        <section id="contact" class="relative px-[5%]">
+        <section id="contact" class="relative px-[5%] pt-10 lg:pt-32">
             <div class="background-light-elem background-light-elem--right"></div>
             <div class="container">
 
@@ -538,8 +539,8 @@
                                     aria-invalid="false" placeholder="Telegram link of 888starz manager (optional)"
                                     value="" type="text" name="tg-manager"></span>
                             <div class="flex items-center gap-2 justify-start w-full py-2">
-                                <input type="checkbox" required name="Consent" id="">
-                                <label for="consent" class="text-white">I confirm that I am 18+ and consent to data
+                                <input type="checkbox" required name="Consent">
+                                <label for="consent" aria-label="Consent" class="text-white">I confirm that I am 18+ and consent to data
                                     processing</label>
                             </div>
 
@@ -558,7 +559,7 @@
         <div class="footer__container container">
             <div class="footer__logo-container">
                 <div class="logo">
-                    <a href="./index.html" class="absolute"></a>
+                    <a aria-label="Refresh the website" href="./index.html" class="absolute"></a>
                     <img src="./images/logo.svg" class="w-full h-full" alt="Logo">
                 </div>
             </div>
